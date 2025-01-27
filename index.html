@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Dive into our Augmented Reality Experience and explore immersive content in your preferred language." />
+        <title>Datu and The Magic Paintbrush</title>
+        <style>
+            /* Import a Google Font */
+            @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap");
+
+            /* General styling */
+            body {
+                font-family: "Roboto", sans-serif; /* Default font */
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background: url("cover.jpg") no-repeat center center fixed; /* Replace 'cover.jpg' with your image file name */
+                background-size: cover;
+                color: white;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            header {
+                margin-top: 100px;
+            }
+
+            /* Specific styling for "Datu" */
+            #title-main {
+                font-family: "Lobster", cursive; /* Use a fancy font for the title */
+                font-size: 5em;
+                margin: 0;
+                color: #ffcf47; /* Golden color for the title */
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            }
+
+            /* Styling for "Paintbrush" */
+            #highlighted-text {
+                color: #ffa07a; /* Light coral for contrast */
+                font-style: italic;
+            }
+
+            /* Black transparent box styling */
+            #content-box {
+                background: rgba(0, 0, 0, 0.6); /* Black with 60% transparency */
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow for the box */
+                width: 90%; /* Adjust width to fit content */
+                max-width: 400px; /* Set maximum width */
+                margin-top: 20px; /* Space below the title */
+            }
+
+            /* Styling for anchor tags as buttons */
+            a.button {
+                font-size: 20px;
+                padding: 15px 30px;
+                margin: 15px 0; /* Vertical spacing between buttons */
+                text-decoration: none; /* Remove underline */
+                display: block; /* Make buttons stack vertically */
+                border-radius: 50px; /* Rounded button */
+                background: linear-gradient(45deg, #ff7f50, #ff6347); /* Gradient effect */
+                color: white; /* Text color */
+                font-weight: bold;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+                cursor: pointer;
+                transition: 
+                    background 0.4s ease, 
+                    transform 0.2s ease, 
+                    box-shadow 0.4s ease;
+                width: 200px; /* Set a consistent button width */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            a.button:hover {
+                background: linear-gradient(45deg, #ffa07a, #ff7f50); /* Lighter gradient on hover */
+                transform: translateY(-5px); /* Slight pop-up effect */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Elevated shadow */
+            }
+
+            /* Styling for the creator text */
+            #creator-text {
+                font-size: 1.2em;
+                font-style: italic;
+                color: white; /* Maintain the white text color for visibility */
+            }
+
+            h1,
+            h2 {
+                margin: 0;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="title-main">Datu and the <span id="highlighted-text">Magic Paintbrush</span></h1>
+        </header>
+
+        <main>
+            <div id="content-box">
+                <p id="creator-text">Created by GROUP 4</p>
+                <p>Select a language or view the map to begin your journey.</p>
+
+                <div id="language-buttons">
+                    <a class="button" href="/coding/Bahasa Bajau/" target="_blank">Bahasa Bajau</a>
+                    <a class="button" href="/coding/English/" target="_blank">English</a>
+                    <a class="button" href="/coding/Map/" target="_blank">Map</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
